@@ -1,5 +1,5 @@
-include .env
-export $(shell sed 's/=.*//' .env)
+include dev.env
+export $(shell sed 's/=.*//' dev.env)
 
 CFLAGS = -lcurl
 app: main.cpp spotify/spotify.cpp
